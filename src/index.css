@@ -22,8 +22,16 @@ li {
 }
 
 .mail-box {
-  border: 2px solid white;
-  padding: 20px;
+  border: 2px solid white; 
+  padding: 20px; 
+  width: 150px; 
+  height: 150px; 
+  text-align: center; 
+  margin: 10px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #f0f0f0; 
 }
 
 form {
