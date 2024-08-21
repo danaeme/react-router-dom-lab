@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './MailboxForm.css';
 
 
 const MailboxForm = ({ addBox }) => {
 
-    const [formData, setFormData] = useState({ boxholder: '', boxSize: 'Small'});
+    const [formData, setFormData] = useState({ 
+        boxholder: '', 
+        boxSize: 'Small'
+    });
+
     const navigate = useNavigate();
     
     const handleChange = ({ target }) => {
@@ -18,7 +23,7 @@ const MailboxForm = ({ addBox }) => {
     };
 
     return (
-        <div>
+        <div className="mailbox-form">
             <h2>New Mailbox</h2>
             <div>
             <form onSubmit={handleSubmit}>

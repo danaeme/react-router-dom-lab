@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
+import './MailboxList.css';
+
 
 const MailboxList = ({ mailboxes }) => {
     return (
-      <div>
+      <div classname = "mailbox-list">
         <h2>Mailbox List</h2>
         <ul>
         {mailboxes.map((mailbox) => (
